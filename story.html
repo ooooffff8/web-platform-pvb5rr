@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Story Ideas</title>
+</head>
+<body>
+	<script>
+		// Create an array of story ideas
+		var ideas = [
+			"A detective tries to solve a murder mystery",
+			"A group of explorers search for a lost treasure",
+			"A time traveler gets stuck in the past",
+			"A young hero must save their kingdom from an evil sorcerer",
+			"An alien race tries to invade Earth",
+			"A group of survivors try to survive in a post-apocalyptic world",
+			"A journalist investigates a corrupt government",
+			"A scientist creates a machine that can see into the future",
+			"A group of rebels try to overthrow a tyrannical government",
+			"A supernatural being falls in love with a human"
+		];
+		
+		// Generate a random index
+		var randomIndex = Math.floor(Math.random() * ideas.length);
+		
+		// Get a random idea from the array
+		var randomIdea = ideas[randomIndex];
+		
+		// Create a heading element
+		var heading = document.createElement("h1");
+		
+		// Set the text content of the heading
+		heading.textContent = "Random Story Idea";
+		
+		// Add the heading to the body of the webpage
+		document.body.appendChild(heading);
+		
+		// Create a paragraph element
+		var paragraph = document.createElement("p");
+		
+		// Set the text content of the paragraph
+		paragraph.textContent = randomIdea;
+		
+		// Add the paragraph to the body of the webpage
+		document.body.appendChild(paragraph);
+	</script>
+	<button onclick="window.location.href = 'index.html'">Back to Main Page</button>
+</body>
+</html>
